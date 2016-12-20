@@ -30,6 +30,7 @@ libziparchive_common_c_flags := \
     -DZLIB_CONST \
     -Werror \
     -Wall \
+    -D_FILE_OFFSET_BITS=64 \
 
 # Incorrectly warns when C++11 empty brace {} initializer is used.
 # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61489
