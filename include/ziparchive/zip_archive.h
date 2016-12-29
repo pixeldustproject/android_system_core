@@ -26,8 +26,6 @@
 #include <sys/types.h>
 #include <utils/Compat.h>
 
-__BEGIN_DECLS
-
 /* Zip compression methods we support */
 enum {
   kCompressStored     = 0,        // no compression
@@ -214,7 +212,5 @@ int32_t ExtractToMemory(ZipArchiveHandle handle, ZipEntry* entry,
 int GetFileDescriptor(const ZipArchiveHandle handle);
 
 const char* ErrorCodeString(int32_t error_code);
-
-__END_DECLS
 
 #endif  // LIBZIPARCHIVE_ZIPARCHIVE_H_
