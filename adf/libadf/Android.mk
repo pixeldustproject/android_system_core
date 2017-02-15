@@ -15,7 +15,7 @@
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := adf.c
+LOCAL_SRC_FILES := adf.cpp
 LOCAL_MODULE := libadf
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Werror
